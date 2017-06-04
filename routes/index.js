@@ -143,7 +143,7 @@ router.delete('/quizzes/:quizId(\\d+)/tips/:tipId(\\d+)',
 router.get('/help', function(req, res, next) {
     res.render('help');
 });
-=======
+
 router.get('/quizzes',                     quizController.index);
 router.get('/quizzes/:quizId(\\d+)',       quizController.show);
 router.get('/quizzes/new',                 quizController.new);
