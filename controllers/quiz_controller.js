@@ -244,7 +244,7 @@ exports.randomcheck = function (req, res, next) {
     }
     else{
 	req.session.score=0;
-        req.session.question=[-1];
+        req.session.questions=[-1];
     }
 
     res.render('quizzes/random_result', {
