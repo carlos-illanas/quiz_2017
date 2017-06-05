@@ -6,7 +6,7 @@ var Sequelize = require('sequelize');
 exports.load = function (req, res, next, tipId) {
 
     models.Tip.findById(tipId, {
-	include:
+	include: [
 	    {model: models.User, as: 'Author'}
         ] 
     })
